@@ -40,6 +40,8 @@ ul, ol {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -181,7 +183,7 @@ max-height: 72px ;
 
 
 .section-caption {
-padding: 188px 0;
+padding: 72px 0;
     background: var(--NAVY-BLUE, #2E2F42);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
@@ -193,20 +195,17 @@ padding: 188px 0;
     background-size: cover;
 }
 
-.caption-container {
-    
-}
 
 
 .caption {
     color: var(--WHITE, #FFFFFF);
-font-size: 56px;
-line-height: 1.07; 
+font-size: 36px;
+line-height: 1.1; 
 letter-spacing: 0.02em;
 text-align: center;
 margin: auto;
-margin-bottom: 48px;
-max-width: 496px;
+margin-bottom: 72px;
+max-width: 288px;
 
 
 }
@@ -274,6 +273,7 @@ letter-spacing: 0.02em;
 }
 
 .plan-icon-wrap {
+    display: none;
     width: 264px;
         height: 112px;
         display: flex;
@@ -283,6 +283,7 @@ letter-spacing: 0.02em;
             border: 1px solid var(--LIGHT-SLATE, #8E8F99);
             background: var(--CLOUD, #F4F4FD);
             margin-bottom: 8px;
+            
 }
 
 /*  */
@@ -958,6 +959,11 @@ margin: 0 auto;
         .plan-list {
             flex-wrap: nowrap;
         }
+
+        .plan-icon-wrap {
+            display: block;
+        }
+                
 
                 .team{
                     padding: 120px 0;
