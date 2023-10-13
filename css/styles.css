@@ -273,7 +273,7 @@ letter-spacing: 0.02em;
 }
 
 .plan-icon-wrap {
-    display: none;
+    
     width: 264px;
         height: 112px;
         display: flex;
@@ -283,7 +283,7 @@ letter-spacing: 0.02em;
             border: 1px solid var(--LIGHT-SLATE, #8E8F99);
             background: var(--CLOUD, #F4F4FD);
             margin-bottom: 8px;
-            
+            display: none;
 }
 
 /*  */
@@ -961,7 +961,7 @@ margin: 0 auto;
         }
 
         .plan-icon-wrap {
-            display: block;
+            /* display: block; */
         }
                 
 
