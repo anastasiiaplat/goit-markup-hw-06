@@ -915,7 +915,7 @@ margin: 0 auto;
         
 
                 .team-item {
-                    width: calc((100% - 24px) / 2);
+                    
                 }
                 .team-list{ 
                     gap: 64px 24px ;
