@@ -39,7 +39,7 @@ ul, ol {
 }
 
 img {
-    display: block;
+   
     max-width: 100%;
     height: auto;
 }
@@ -187,10 +187,10 @@ padding: 72px 0;
     background: var(--NAVY-BLUE, #2E2F42);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/people-office.jpg);
+        url(../images/Dark-bg-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1440px; 
+    max-width: 320px; 
     margin: 0 auto;
     background-size: cover;
 }
@@ -273,7 +273,7 @@ letter-spacing: 0.02em;
 }
 
 .plan-icon-wrap {
-    
+    display: none;
     width: 264px;
         height: 112px;
         display: flex;
@@ -283,7 +283,7 @@ letter-spacing: 0.02em;
             border: 1px solid var(--LIGHT-SLATE, #8E8F99);
             background: var(--CLOUD, #F4F4FD);
             margin-bottom: 8px;
-            display: none;
+            
 }
 
 /*  */
@@ -929,6 +929,18 @@ margin: 0 auto;
                                 .portfolio-item {
                                     max-width: 356px;
                                 }
+                                                .section-caption {
+                                                    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                                                                rgba(46, 47, 66, 0.7)),
+                                                            url(../images/Dark-bg-2.jpg);
+                                                    padding: 112px 0;
+                                                    max-width: 768px;
+                                                }
+
+                                                .caption {
+                                                    font-size: 56px;
+                                                    max-width: 496px;
+                                                }
 }
 
 @media screen and (min-width: 1158px) {
@@ -987,4 +999,11 @@ margin: 0 auto;
                                     width: calc((100% - 48px) / 3);
                                     max-width: 360px;
                                 }
+                                                .section-caption {
+                                                    padding: 188px 0;
+                                                    max-width: 1440px;
+                                                    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                                                                rgba(46, 47, 66, 0.7)),
+                                                            url(../images/Dark-bg-3.jpg);
+                                                }
 }
