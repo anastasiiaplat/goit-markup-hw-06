@@ -222,10 +222,6 @@ background-color: var(--OCEAN, #404BBF);
     fill: #ffffff;
 }
 
-.mob-menu-btn-icon {}
-
-.mob-menu-navigation {}
-
 .mob-menu-list {
     display: flex;
         gap: 40px;
@@ -253,13 +249,15 @@ background-color: var(--OCEAN, #404BBF);
 
 
 .mob-menu-address-list {
-    
+    margin-bottom: 48px;
         font-style: normal;
 }
 
-.mob-menu-address-item {}
+
 
 .mob-menu-address-link {
+    display: block;
+   margin-bottom: 24px;
     color: #434455;
         font-size: 20px;
         line-height: 1.2;
@@ -285,14 +283,13 @@ color: #404bbf;
         justify-content: center;
         border-radius: 50%;
     
+    
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-soc-link:hover, .mob-soc-link:focus {
 background-color: var(--GREEN, #31D0AA);
 }
-
-.menu-soc-links {}
 
 .mob-soc-icon {
     fill: #F4F4FD;}
