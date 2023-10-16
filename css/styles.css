@@ -191,9 +191,9 @@ background-color: transparent;
 
 .mob-menu-btn {
     display: block;
-    margin-left: auto;
-    margin-bottom: 24px;
-       
+    top: 24px;
+    right: 24px;
+
         align-items: center;
         justify-content: center;
         position: absolute;
