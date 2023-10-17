@@ -189,7 +189,8 @@ background-color: transparent;
 
     
     visibility: hidden;
- pointer-events: auto;
+opacity: 0;
+    pointer-events: none;
 }
 
 
