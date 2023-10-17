@@ -191,7 +191,7 @@ background-color: transparent;
     overflow: auto;
 
 
-    display: none;
+    
     visibility: hidden;
  pointer-events: auto;
 }
