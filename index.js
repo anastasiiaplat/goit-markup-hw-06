@@ -1,20 +1,34 @@
+const btn = document.querySelector('.btn-modal')
+const modal = document.querySelector('.modal')
+const backdrop = document.querySelector('.backdrop')
 
-const modal = document.querySelector(".modal");
+btn.addEventListener('click', e => {
+    if(e.target.nodeName !== 'BUTTON') return
+    showModal()
+})
+
+backdrop.addEventListener('click', e => {
+    if(e.target === e.currentTarget)
+    hideModal()
+})
 
 
-const closeBtn = document.querySelector(".modal-btn-icon");
+function showModal (){
+    backdrop.classList.add('show-modal')
+    window.addEventListener('keydown' ,
+    onCloseEsc )
+    // document.body.style.overflow = “hidden”
+}
 
-
-function closeModal() {
-  modal.style.display = "none"; 
+function hideModal (){
+    backdrop.classList.remove('show-modal')
+    window.removeEventListener('keydown' , onCloseEsc )
+    // document.body.style.overflow = “”
 }
 
 
-closeBtn.addEventListener("click", closeModal);
-
-
-window.addEventListener("click", function(event) {
-  if (event.target == modal) {
-    closeModal();
-  }
-});
+function onCloseEsc (e) {
+    if(e.code === 'Escape'){
+        hideModal ()
+    }
+}

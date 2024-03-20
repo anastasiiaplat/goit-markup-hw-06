@@ -795,6 +795,12 @@ margin-left: 16px;
 /*  */
 /* Modal */
 
+.show-modal {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
