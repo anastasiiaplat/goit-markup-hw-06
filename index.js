@@ -1,11 +1,11 @@
-const btn = document.querySelector('.btn-modal')
-const modal = document.querySelector('.modal')
+const captionButton = document.querySelector('.js-caption-button')
+const closeButton = document.querySelector('.js-modal-btn')
 const backdrop = document.querySelector('.backdrop')
 
-btn.addEventListener('click', e => {
-if(e.target.nodeName !== 'BUTTON') return
-showModal()
-})
+captionButton.addEventListener('click', showModal)
+
+
+closeButton.addEventListener('click', hideModal)
 
 backdrop.addEventListener('click', e => {
 if(e.target === e.currentTarget)
